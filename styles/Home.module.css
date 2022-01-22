@@ -1,10 +1,10 @@
 .container {
     padding-bottom: 50px;
-    background: url("/gif.png");
+    /* background: url("/gif.gif");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom; */
 }
 
 .grid{
@@ -16,13 +16,17 @@
     justify-content: center;
     grid-gap: 50px;
     padding: 0 2em;
-    grid-template-columns: 300px 625px 300px;
+    grid-template-columns: 270px 625px 270px;
+}
+
+.c1, .c3 {
+    width: 270px;
 }
 
 .stepNumber {
     font-family: "Wallet";
     color: var(--red);
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: -7px;
     margin-top: 0px;
 }
@@ -41,7 +45,7 @@
 }
 
 .c1 div, .c2 div, .c3 div {
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 .step2, .step4 {
@@ -55,18 +59,21 @@
 .nftsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 15px;
+    grid-gap: 15px;
+    grid-column-gap: 0px;
+    padding: 10px;
     border: 2px solid var(--red);
+    justify-items: center;
     background:rgba(0, 0, 0, 0.568);
 }
 
 .nftsGrid div{
     cursor: pointer;
+    width: fit-content;
 }
 
 .nftsGrid div img {
-    width: 75px;
+    width: 60px;
 }
 
 .nftsGrid div svg {
@@ -86,10 +93,6 @@
     cursor: pointer;
     font-weight: 500;
     background: rgba(0, 0, 0, 0.568);
-}
-
-.c1, .c3 {
-    width: 300px;
 }
 
 .c2 {
@@ -137,10 +140,7 @@
     align-items: center;
     width: fit-content;
     margin: 0 auto;
-}
-
-.content {
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .yourOffer p:nth-child(1), .reciversOffer p:nth-child(1){
@@ -169,7 +169,7 @@
     font-size: 1.7rem !important;
     border: 2px solid var(--red);
     background: #47474779;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 100%;
 }
 
@@ -205,13 +205,13 @@
     }
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1250px){
     .grid{
-        grid-template-columns: 220px 590px 220px;
+        grid-template-columns: 190px 590px 190px;
     }
 
     .c1, .c3 {
-        width: 220px;
+        width: 190px;
     }
 
     .nftsGrid {
@@ -219,7 +219,7 @@
     }
 }
 
-@media only screen and (max-width: 1115px){
+@media only screen and (max-width: 1060px){
     .yourOffer, .reciversOffer{
         width: 200px;
     }
@@ -229,13 +229,17 @@
     }
 }
 
-@media only screen and (max-width: 1160px){
+@media only screen and (max-width: 1060px){
     .c1, .c3 {
         width: 320px;
     }
 
     .nftsGrid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nftsGrid div img {
+        width: 75px;
     }
 
     .c1 {
@@ -334,8 +338,13 @@
         ;
     }
 
+    .nftsGrid div img {
+        width: 80px;
+    }
+
     .nftsGrid{
         justify-items: center;
+        padding: 30px 5px;
     }
     
     .step3, .step4 {
@@ -355,4 +364,15 @@
     .nftsGrid {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+@media only screen and (max-width: 380px){
+    .nftsGrid div img {
+        width: 70px;
+    }
+
+    .nftsGrid{
+        padding: 15px 5px;
+    }
+
 }
