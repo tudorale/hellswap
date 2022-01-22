@@ -1,116 +1,358 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+    padding-bottom: 50px;
+    background: url("/gif.png");
     width: 100%;
-    flex-direction: column;
-  }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 50px;
+    padding: 0 2em;
+    grid-template-columns: 300px 625px 300px;
+}
+
+.stepNumber {
+    font-family: "Wallet";
+    color: var(--red);
+    font-size: 3.2rem;
+    margin-bottom: -7px;
+    margin-top: 0px;
+}
+
+.c1, .c2, .c3 {
+    font-weight: 500;
+}
+
+.wallet {
+    font-size: 1.3rem !important;
+    border: 2px solid var(--red);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.568);
+}
+
+.c1 div, .c2 div, .c3 div {
+    font-size: 1.05rem;
+}
+
+.step2, .step4 {
+    margin-top: 70px;
+}
+
+.subTitle {
+    margin-top: 35px;
+}
+
+.nftsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 15px;
+    border: 2px solid var(--red);
+    background:rgba(0, 0, 0, 0.568);
+}
+
+.nftsGrid div{
+    cursor: pointer;
+}
+
+.nftsGrid div img {
+    width: 75px;
+}
+
+.nftsGrid div svg {
+    position: absolute;
+    margin-left: -14px;
+    margin-top: 4px;
+}
+
+.step3, .step4 {
+    text-align: right;
+}
+
+.walletTwo {
+    font-size: 1.3rem !important;
+    border: 2px solid var(--red);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.568);
+}
+
+.c1, .c3 {
+    width: 300px;
+}
+
+.c2 {
+    padding-top: 20px;
+}
+
+.c2 h1 {
+    font-family: "FreeHand";
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0px 4px 12px #000000;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.trading {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    position: relative;
+    max-width: 625px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.568);
+    position: absolute;
+    max-width: 625px;
+    z-index: 2;
+}
+
+.under {
+    font-size: 3.4rem !important;
+    text-align: center;
+}
+
+.under span {
+    color: var(--red);
+}
+
+.content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.yourOffer p:nth-child(1), .reciversOffer p:nth-child(1){
+    font-family: "FreeHand";
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.yourOffer, .reciversOffer{
+    width: 220px;
+}
+
+.yourOffer img, .reciversOffer img {
+    width: 100%;
+}
+
+
+.yourOffer p:nth-child(3), .reciversOffer p:nth-child(3){
+    font-size: 0.95rem;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.value {
+    font-size: 1.7rem !important;
+    border: 2px solid var(--red);
+    background: #47474779;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.reciversOffer {
+    text-align: right;
+}
+
+.arrows {
+    margin: 0 30px;
+}
+
+.arrows svg {
+    width: 42px;
+    height: 42px;
+}
+
+.makeTrade {
+    font-family: "Wallet";
+    font-size: 2.2rem;
+    color: #1C1717;
+    background: rgba(112, 0, 0, 0.67);
+    box-shadow: 0px -1px 11px #000000;
+    padding: 0px 200px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1330px){
+    .grid{
+        grid-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .grid{
+        grid-template-columns: 220px 590px 220px;
+    }
+
+    .c1, .c3 {
+        width: 220px;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1115px){
+    .yourOffer, .reciversOffer{
+        width: 200px;
+    }
+
+    .grid{
+        grid-template-columns: 220px 540px 220px;
+    }
+}
+
+@media only screen and (max-width: 1160px){
+    .c1, .c3 {
+        width: 320px;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .c1 {
+        grid-area: c1;
+    }
+
+    .c2{
+        grid-area: c2;
+    }
+
+    .c3{
+        grid-area: c3;
+    }
+
+    .grid{
+        grid-template-columns: 320px 320px;
+        grid-column-gap: 70px;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "c1 c3"
+        "c2 c2"
+    }
+
+    .trading {
+        max-width: unset;
+    }
+    .overlay {
+        max-width: unset;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 220px 220px;
+        justify-content: space-between;
+        grid-gap: 0px !important;
+    }
+    
+    .c1, .c3 {
+        width: 220px;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .makeTrade {
+        padding: 0;
+        width: 85%;
+        text-align: center;
+    }
+
+    .step1 p:nth-child(2){
+        width: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .content {
+        flex-direction: column;
+    }
+
+    .arrows {
+        margin: 40px 0px;
+        transform: rotate(90deg);
+    }
+
+    .reciversOffer, .yourOffer {
+        text-align: center;
+    }
+
+    .value{
+        text-align: left;
+    }
+
+    .c2 h1 {
+        font-size: 3.5rem;
+    }
+
+    .under {
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .grid {
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-gap: 70px !important;
+        grid-template-areas: 
+        "c1"
+        "c3"
+        "c2"
+        ;
+    }
+
+    .nftsGrid{
+        justify-items: center;
+    }
+    
+    .step3, .step4 {
+        text-align: left;
+    }
+    .trading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .overlay {
+        margin-left: -20px;
+    }
+    .c1, .c3 {
+        width: 100%;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
