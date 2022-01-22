@@ -141,7 +141,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className={styles.reciversOffer}>
-                <p>RECIVER'S OFFER</p>
+                <p>RECIVER&apos;S OFFER</p>
                 <img src={reciversSrc}/>
                 <p>SOL ASKED</p>
                 <div className={styles.value}>0</div>
@@ -153,7 +153,7 @@ export default function Home() {
         <div className={styles.c3}>
           <div className={styles.step3}>
             <p className={styles.stepNumber}>Step <span>3</span></p>
-            <p className={styles.info}>Add Reciver's Wallet Address</p>
+            <p className={styles.info}>Add Reciver&apos;s Wallet Address</p>
             <div className={styles.walletTwo}>
               Phantom
               <div></div>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className={styles.step4}>
             <p className={styles.stepNumber}>Step <span>4</span></p>
             <p className={styles.info}>Pick NFT You Want</p>
-            <p className={styles.subTitle}>Receiver's NFT</p>
+            <p className={styles.subTitle}>Receiver&apos;s NFT</p>
             <div className={styles.nftsGrid}>
               <div>
                 <img src="/nfts/nft.gif" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
