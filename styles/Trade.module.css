@@ -52,6 +52,10 @@
     margin-top: 70px;
 }
 
+.step4 p:nth-child(1) {
+    color: #6e0000;
+}
+
 .subTitle {
     margin-top: 35px;
 }
@@ -130,7 +134,8 @@
 }
 
 .under span {
-    color: var(--red);
+    color: #c90000;
+    
 }
 
 .content {
