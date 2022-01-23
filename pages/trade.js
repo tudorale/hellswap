@@ -141,7 +141,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className={styles.reciversOffer}>
-                <p>RECIVER&apos;S OFFER</p>
+                <p>RECEIVER&apos;S OFFER</p>
                 <img src={reciversSrc}/>
                 <p>SOL ASKED</p>
                 <div className={styles.value}>0</div>
