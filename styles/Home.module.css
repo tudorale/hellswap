@@ -17,16 +17,15 @@
     position: absolute;
     height: 100%;
     z-index: 87;
-    opacity: 0.2;
     animation: 1500ms rainbow infinite alternate-reverse;
 }
 
 @keyframes rainbow {
     from{
-        background: red;
+        background: rgba(255, 0, 0, 0.144);
     }
     to{
-        background: rgb(61, 255, 239);
+        background: rgba(61, 255, 239, 0.144);
     }
 }
 
@@ -494,6 +493,7 @@
     height: 250px;
     background: black;
     padding: 0 70px;
+    margin-top: -40px;
 }
 
 .footerContent {
