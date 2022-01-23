@@ -10,6 +10,11 @@
   src: url("/wallet.ttf");
 }
 
+@font-face {
+  font-family: WalletBold;
+  src: url("/WalletBold.ttf");
+}
+
 :root {
   --red: #3B0202;
 }
@@ -24,6 +29,15 @@ body {
   color: white;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -34,11 +48,6 @@ body {
   z-index: 996;
   opacity: 0;
   transition: all 270ms linear;
-}
-
-
-body {
-
 }
 
 a {

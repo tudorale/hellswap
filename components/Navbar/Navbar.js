@@ -56,8 +56,8 @@ function Navbar() {
             </div>
             <ul className={styles.ul}>
                 <li><Link href="/">Home</Link></li>
-                <li><Link href="/">Roadmap</Link></li>
-                <li><Link href="/">Team</Link></li>
+                <li><Link href="#roadmap">Roadmap</Link></li>
+                <li><Link href="#team">Team</Link></li>
                 <li><Link href="/">News</Link></li>
                 <li><Link href="/">FAQs</Link></li>
             </ul>
