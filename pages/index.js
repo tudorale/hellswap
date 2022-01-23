@@ -16,7 +16,7 @@ function index() {
 
             <div className={styles.topText}>
                 <h1>BECOME THE MASTER OF YOUR REALM</h1>
-                <h1>IT'S YOUR LAST CHANCE</h1>
+                <h1>IT&apos;S YOUR LAST CHANCE</h1>
                 <h1>TO HELP THE HUMANITY</h1>
             </div>
         </div>
