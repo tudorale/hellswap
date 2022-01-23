@@ -38,11 +38,7 @@ body {
 
 
 body {
-  background: url("/background.gif");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+
 }
 
 a {
