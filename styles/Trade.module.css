@@ -1,0 +1,378 @@
+.container {
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(0.5, 0.5, 0.5, 0.5),rgba(0.5, 0.5, 0.5, 0.5)), url("/background2.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.grid{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 50px;
+    padding: 0 2em;
+    grid-template-columns: 270px 625px 270px;
+}
+
+.c1, .c3 {
+    width: 270px;
+}
+
+.stepNumber {
+    font-family: "Wallet";
+    color: var(--red);
+    font-size: 3rem;
+    margin-bottom: -7px;
+    margin-top: 0px;
+}
+
+.c1, .c2, .c3 {
+    font-weight: 500;
+}
+
+.wallet {
+    font-size: 1.3rem !important;
+    border: 2px solid var(--red);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.568);
+}
+
+.c1 div, .c2 div, .c3 div {
+    font-size: 1rem;
+}
+
+.step2, .step4 {
+    margin-top: 70px;
+}
+
+.subTitle {
+    margin-top: 35px;
+}
+
+.nftsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    grid-column-gap: 0px;
+    padding: 10px;
+    border: 2px solid var(--red);
+    justify-items: center;
+    background:rgba(0, 0, 0, 0.568);
+}
+
+.nftsGrid div{
+    cursor: pointer;
+    width: fit-content;
+}
+
+.nftsGrid div img {
+    width: 60px;
+}
+
+.nftsGrid div svg {
+    position: absolute;
+    margin-left: -14px;
+    margin-top: 4px;
+}
+
+.step3, .step4 {
+    text-align: right;
+}
+
+.walletTwo {
+    font-size: 1.3rem !important;
+    border: 2px solid var(--red);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.568);
+}
+
+.c2 {
+    padding-top: 20px;
+}
+
+.c2 h1 {
+    font-family: "FreeHand";
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0px 4px 12px #000000;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.trading {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    position: relative;
+    max-width: 625px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.568);
+    position: absolute;
+    max-width: 625px;
+    z-index: 2;
+}
+
+.under {
+    font-size: 3.4rem !important;
+    text-align: center;
+}
+
+.under span {
+    color: var(--red);
+}
+
+.content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.yourOffer p:nth-child(1), .reciversOffer p:nth-child(1){
+    font-family: "FreeHand";
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.yourOffer, .reciversOffer{
+    width: 220px;
+}
+
+.yourOffer img, .reciversOffer img {
+    width: 100%;
+}
+
+
+.yourOffer p:nth-child(3), .reciversOffer p:nth-child(3){
+    font-size: 0.55rem;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.value {
+    font-size: 1.7rem !important;
+    border: 2px solid var(--red);
+    background: #47474779;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.reciversOffer {
+    text-align: right;
+}
+
+.arrows {
+    margin: 0 30px;
+}
+
+.arrows svg {
+    width: 42px;
+    height: 42px;
+}
+
+.makeTrade {
+    font-family: "Wallet";
+    font-size: 2.2rem;
+    color: #1C1717;
+    background: rgba(112, 0, 0, 0.67);
+    box-shadow: 0px -1px 11px #000000;
+    padding: 0px 200px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1330px){
+    .grid{
+        grid-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .grid{
+        grid-template-columns: 190px 590px 190px;
+    }
+
+    .c1, .c3 {
+        width: 190px;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+    .yourOffer, .reciversOffer{
+        width: 200px;
+    }
+
+    .grid{
+        grid-template-columns: 220px 540px 220px;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+    .c1, .c3 {
+        width: 320px;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nftsGrid div img {
+        width: 75px;
+    }
+
+    .c1 {
+        grid-area: c1;
+    }
+
+    .c2{
+        grid-area: c2;
+    }
+
+    .c3{
+        grid-area: c3;
+    }
+
+    .grid{
+        grid-template-columns: 320px 320px;
+        grid-column-gap: 70px;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "c1 c3"
+        "c2 c2"
+    }
+
+    .trading {
+        max-width: unset;
+    }
+    .overlay {
+        max-width: unset;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 220px 220px;
+        justify-content: space-between;
+        grid-gap: 0px !important;
+    }
+    
+    .c1, .c3 {
+        width: 220px;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .makeTrade {
+        padding: 0;
+        width: 85%;
+        text-align: center;
+    }
+
+    .step1 p:nth-child(2){
+        width: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .content {
+        flex-direction: column;
+    }
+
+    .arrows {
+        margin: 40px 0px;
+        transform: rotate(90deg);
+    }
+
+    .reciversOffer, .yourOffer {
+        text-align: center;
+    }
+
+    .value{
+        text-align: left;
+    }
+
+    .c2 h1 {
+        font-size: 3.5rem;
+    }
+
+    .under {
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .grid {
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-gap: 70px !important;
+        grid-template-areas: 
+        "c1"
+        "c3"
+        "c2"
+        ;
+    }
+
+    .nftsGrid div img {
+        width: 80px;
+    }
+
+    .nftsGrid{
+        justify-items: center;
+        padding: 30px 5px;
+    }
+    
+    .step3, .step4 {
+        text-align: left;
+    }
+    .trading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .overlay {
+        margin-left: -20px;
+    }
+    .c1, .c3 {
+        width: 100%;
+    }
+
+    .nftsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .nftsGrid div img {
+        width: 70px;
+    }
+
+    .nftsGrid{
+        padding: 15px 5px;
+    }
+
+}
