@@ -1,6 +1,6 @@
-.home {
+.top {
     padding-bottom: 50px;
-    background: linear-gradient(rgba(0.9, 0.9, 0.9, 0.9),rgba(0.9, 0.9, 0.9, 0.9)), url("/background2.png");
+    background: url("/background.gif");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
