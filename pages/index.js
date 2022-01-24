@@ -235,7 +235,7 @@ export default function Index() {
                     </div>
                     <div>
                         <img src="/team/joshua.png"/>
-                        <p>JOSHUA KEZZAR<br/>(BRAINS)</p>
+                        <p>JOSHUA KEZZER<br/>(BRAINS)</p>
                     </div>
                     <div>
                         <img src="/team/pp.png"/>
