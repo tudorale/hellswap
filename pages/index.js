@@ -59,7 +59,7 @@ export default function index() {
 
             <div className={styles.sectionFour}>
                 <div className={styles.b1}>
-                    <h1>Year 2069 : HUMANITY'S DOOMED FATE</h1>
+                    <h1>Year 2069 : HUMANITY&apos;S DOOMED FATE</h1>
                 </div>
                 <div className={styles.b5}>
                     <img src="/c3.png" alt=""/>
