@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link"
 import {useEffect, useState} from "react";
 
-export default function index() {
+export default function Index() {
     const [width, setWidth] = useState(600);
 
         useEffect(() => {
