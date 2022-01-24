@@ -173,7 +173,7 @@ export default function index() {
                 </div>
                 <div className={styles.wrapper}>
                         <h1 className={styles.meet} id="team">
-                            MEET THE TEAM BEHIND
+                            MEE<span>T</span> T<span>H</span>E TEAM BEHIND
                         </h1>
                         <img src="/whitelogo.png" alt="logo"/>
                 </div>
@@ -204,7 +204,7 @@ export default function index() {
                 <div className={styles.extraWrapper}>
                     <div className={styles.more}>
                         <div className={styles.innerMore}>
-                            <h1>JOIN THE SKULLBOT BIKER GANG</h1>
+                            <h1>JOIN T<span>H</span>E SKULLBOT BIKER GANG</h1>
                             <img src="/Arrow.gif" className={styles.arrow}/>
                         </div>
                         <div className={styles.cards}>

@@ -399,6 +399,16 @@
     -webkit-text-stroke-color: #a80000;
 }
 
+.meet span:nth-child(1){
+    position: relative;
+    left: 7px;
+}
+
+.meet span:nth-child(2){
+    position: relative;
+    top: 17px;
+}
+
 .wrapper img {
     width: 210px;
     margin-top: 20px;
@@ -459,6 +469,12 @@
     -webkit-text-stroke: 2.5px;
     -webkit-text-stroke-color: #a80000;
 }
+
+.innerMore h1 span {
+    position: relative;
+    top: 17px;
+}
+
 .innerMore .arrow {
     width: 260px;
     margin-top: 60px;
