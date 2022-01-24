@@ -32,7 +32,7 @@
 
 .top {
     padding-bottom: 50px;
-    background: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3),rgba(0.3, 0.3, 0.3, 0.3)), url("/background.gif");
+    background: url("/bgx.gif");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,13 +106,14 @@
     grid-template-columns: 1fr 1fr;
     width: 1240px;
     margin: 0 auto;
-    grid-gap: 50px;
+    grid-gap: 0px;
     align-items: center;
     margin-top: 160px;
+    justify-items: end;
 }
 
 .sectionOne {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 .text h1{
     font-family: "WalletBold";
@@ -132,38 +133,32 @@
     line-height: 32px;
 }
 
-.animal img {
-    width: 600px;
+.sectionImage img {
+    width: 500px;
+    opacity: 0.25;
 }
-.animal img:hover {
-    transform: scale(115%);
+
+.sectionImage2 img {
+    width: 480px;
+    border-radius: 20px;
+    opacity: 0.5;
 }
 
 .sectionTwo {
     margin-top: 10px;
 }
 
-.middle {
-    background: url("/texture.png");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    margin-top: -80px;
-    position: relative;
-    z-index: 4 !important;
-}
-
 .middle2{
-    background: url("/banner1.png");
+    background: url("/bg1.jpg");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     background-color: black;
-    margin-top: 0px;
     position: relative;
-    z-index: 2;
+    margin-top: -200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .sectionThree {
@@ -193,6 +188,10 @@
     grid-area: b4;
 }
 
+.b5 {
+    grid-area: b5;
+}
+
 .sectionFour {
     display: grid;
     justify-content: center;
@@ -205,9 +204,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "b1 b1"
+    "b5 b5"
     "b2 b3"
     "b4 b4"
     ;
+}
+
+.b5 img {
+    width: 100%;
+    height: 350px;
+    opacity: 0.7;
 }
 
 .b2, .b3 {
@@ -253,7 +259,7 @@
     margin-top: 50px;
     font-weight: 700;
 }
-
+/* 
 .texture {
     background: url("/texture2.png");
     width: 100%;
@@ -264,7 +270,7 @@
     position: relative;
     z-index: -1;
     margin-top: -830px;
-}
+} */
 .texture img {
     position: absolute;
     bottom: -170px;
@@ -437,18 +443,9 @@
 }
 .innerMore .arrow {
     width: 260px;
-    margin-top: 80px;
-    margin-left: 40px;
-    animation: 300ms arrow infinite alternate-reverse;
-}
+    margin-top: 60px;
+    margin-left: 50px;
 
-@keyframes arrow {
-    from {
-        transform: rotate(10deg);
-    }
-    to{
-        transform: rotate(0deg);
-    }
 }
 
 .extraWrapper {
@@ -572,6 +569,10 @@
         ;
     }
 
+    .b5 {
+        display: none;
+    }
+
     .images div:nth-child(1) img {
         width: 300px;
     }
@@ -625,7 +626,7 @@
     }
 
     .sectionOne {
-        padding-bottom: 30px;
+        padding-bottom: 150px;
     }
 
     .sectionThree {
@@ -636,10 +637,10 @@
         margin-top: 0px;
     }
 
-    .animal img {
+    .sectionImage img{
         display: none;
     }
-    .animalBox img {
+    .sectionImage2 img{
         display: none;
     }
     
@@ -802,6 +803,11 @@
         font-size: 2.8rem;
     }
 
+    .sectionOne {
+        padding-bottom: 250px;
+    }
+
+
     .b1{
         font-size: 1.7rem;
         -webkit-text-stroke-width: 1.5px;
@@ -818,4 +824,9 @@
         font-size: 4rem;
     }
 
+    .middle2{
+        margin-top: -270px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }

@@ -2,10 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Trade.module.css'
 import Navbar from "../components/Navbar/Navbar";
 import {useState} from "react";
-export default function Home() {
+export default function Trade() {
 
-  const [yourOfferSrc, setYourOfferSrc] = useState("/nfts/nft12.jpg")
-  const [reciversSrc, setReciversSrc] = useState("/nfts/nft13.jpg")
+  const [yourOfferSrc, setYourOfferSrc] = useState("/nfts/2.png")
+  const [reciversSrc, setReciversSrc] = useState("/nfts/1.png")
 
   const applyOffer = (img) => {
     setYourOfferSrc(img.target.src)
@@ -44,76 +44,55 @@ export default function Home() {
             <p className={styles.subTitle}>Your NFTs</p>
             <div className={styles.nftsGrid}>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
+                <img src="/nfts/1.png" alt="NFT" onClick={applyOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyOffer.bind(this)} />
+                <img src="/nfts/2.png" alt="NFT" onClick={applyOffer.bind(this)} />
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
+                <img src="/nfts/3.png" alt="NFT" onClick={applyOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
+                <img src="/nfts/4.png" alt="NFT" onClick={applyOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
+                <img src="/nfts/5.png" alt="NFT" onClick={applyOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+                <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+                <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+                <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+                <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
             </div>
           </div>
@@ -167,76 +146,61 @@ export default function Home() {
             <p className={styles.subTitle}>Receiver&apos;s NFT</p>
             <div className={styles.nftsGrid}>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/6.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/7.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/8.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/9.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/10.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/11.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
+                <img src="/nfts/12.png" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
                 </svg>
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft13.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
               <div>
-                <img src="/nfts/nft12.jpg" alt="NFT" onClick={applyReciverOffer.bind(this)}/>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M0 5.00649C0 3.67869 0.527468 2.40527 1.46637 1.46637C2.40527 0.527468 3.67869 0 5.00649 0C6.3343 0 7.60772 0.527468 8.54662 1.46637C9.48552 2.40527 10.013 3.67869 10.013 5.00649C10.013 6.3343 9.48552 7.60772 8.54662 8.54662C7.60772 9.48552 6.3343 10.013 5.00649 10.013C3.67869 10.013 2.40527 9.48552 1.46637 8.54662C0.527468 7.60772 0 6.3343 0 5.00649H0ZM4.72079 7.14927L7.6032 3.54593L7.08252 3.12939L4.62467 6.20071L2.88374 4.75016L2.45652 5.26283L4.72079 7.14994V7.14927Z" fill="white" fillOpacity="0.67"/>
-                </svg>
+              <img src="/nfts/blank.jpg" alt="blank" />
               </div>
             </div>
           </div>

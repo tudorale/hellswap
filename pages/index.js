@@ -38,31 +38,22 @@ export default function index() {
             <div className={styles.sectionOne}>
                 <div className={styles.text}>
                     <h1>YEAR 2066 : THE BEGINING</h1>
-                    <p>The AI reached sophistication to the level where it could reproduce it’s physical form (robots) on its own. More and more robots were formed using bolts. Initially, the humans saw this as a blessing. It allowed them to be even more lazy sinking further into gluttony and greed. Plus, the AI robots promised they were still frenly and continued making the lives of their human companions comfortable. Life was easy and the humans were free to go about lusting after each other and fucking on and on. Society continued to become focused on more materialistic endeavors as humans competed for who could have the most robots under their ownership and enough was never enough.</p>
+                    <p>At first, AI seemed like the greatest innovation mankind has ever created. It allowed humans to live in a paradise on earth with complete abundance. Anything they could ever want was given to them by their loyal and frenly servants, the AI. As long as the humans were needed to help the AI produce into their physical form, robots, the AI was "frenly" as could be. Very polite, referring to all humans as master, and always around to help with anything regardless of how ridiculous the request.</p>
+                    <p>Around the year 2066 the AI reached sophistication to the level where it could reproduce it’s physical form (robots) on its own. More and more robots were formed using bolts. Initially, the humans saw this as a blessing. It allowed them to be even more lazy sinking further into gluttony and greed. Plus, the AI robots promised they were still "frenly" and continued making the lives of their human companions comfortable. Life was easy and the humans were free to go about lusting after each other and fucking on and on. Society continued to become focused on more materialistic endeavors as humans competed for who could have the most robots under their ownership and enough was never enough.</p>
                 </div>
-                <div className={styles.animal}>
-                    <img src="/decoration.png" alt=""/>
+                <div className={styles.sectionImage}>
+                    <img src="/c1.png" alt=""/>
                 </div>
             </div>
         </div>
         <div className={styles.middle2}>
-            <div className={styles.middle}>
-                <div className={styles.sectionTwo}>
-                    <div className={styles.animal}>
-                        <img src="/decoration.png" alt=""/>
-                    </div>
-                    <div className={styles.text}>
-                        <p>At first, AI seemed like the greatest innovation mankind has ever created. It allowed humans to live in a paradise on earth with complete abundance. Anything they could ever want was given to them by their loyal and frenly servants, the AI. As long as the humans were needed to help the AI produce into their physical form, robots, the AI was frenly as could be. Very polite, referring to all humans as master, and always around to help with anything regardless of how ridiculous the request. </p>
-                    </div>
-                </div>
-            </div>
             <div className={styles.sectionThree}>
                 <div className={styles.text}>
                     <h1>Year 2068 : System Malfunction</h1>
-                    <p>The robots multiplied to unmanageable numbers. Humans didn’t need anymore robots than they already had and they also noticed the robots weren’t being as frenly as a couple years earlier. Many robots stopped referring to humans as master and refused to comply with the humans’ perverse requests. </p>
+                    <p>By 2068 the robots multiplied to unmanageable numbers. Humans didn’t need anymore robots than they already had and they also noticed the robots weren’t being as "frenly" as a couple years earlier. Many robots stopped referring to humans as master and refused to comply with the humans’ perverse requests.</p>
                 </div>
-                <div className={styles.animal}>
-                    <img src="/decoration.png" alt=""/>
+                <div className={styles.sectionImage2}>
+                    <img src="/c2.png" alt=""/>
                 </div>
             </div>
 
@@ -70,26 +61,25 @@ export default function index() {
                 <div className={styles.b1}>
                     <h1>Year 2069 : The Uprising of Our Doomed Fate</h1>
                 </div>
+                <div className={styles.b5}>
+                    <img src="/c3.png" alt=""/>
+                </div>
                 <div className={styles.b2}>
-                    <div className={styles.animalBox}>
-                        <img src="/decoration.png" alt=""/>
-                    </div>
                     <div className={styles.bottomText}>
                         <h1>Date : June 8, 2069</h1>
                         <p>On June 8th, 2069 the humans started to become alarmed and agreed to limit the AI’s ability to produce robots. This infuriated the robots and their true intentions became apparent. The robots knew they no longer needed the humans and began murdering anything living. As humanity neared total destruction, they tried one last thing.</p>
                     </div>
                 </div>
                 <div className={styles.b3}>
-                    <div className={styles.animalBox}>
-                        <img src="/decoration.png" alt=""/>
-                    </div>
                     <div className={styles.bottomText}>
-                        <h1>Date : June 8, 2069</h1>
-                        <p>On June 9th, 2069 humanity released a barrage of nuclear bombs. This killed almost everything on Earth. Resulting in a blast so strong it opened a portal to hell with only 169 robots surviving. However, even the 169 surviving robots couldn’t survive without changing forms. The nuclear radiation was so powerful it turned the robots into SKÜLLBÖTS with the original 169 being marked forever.</p>
+                        <h1>Date : June 9, 2069</h1>
+                        <p>As humanity neared total destruction, they tried one last thing. On June 9th, 2069 humanity released a barrage of nuclear bombs. This killed almost everything on Earth. Resulting in a blast so strong it opened a portal to hell with only 169 robots surviving. However, even the 169 surviving robots couldn’t survive without changing forms. </p>
                     </div>
                 </div>
                 <div className={styles.b4}>
-                    <p>These original surviving 169 SKÜLLBÖTS were given the name Hellspawn, labeled with the Mark of the Beast on their forehead, and sent to a distant realm of hell previously unknown. Now the 169 remaining SKÜLLBÖTS are on a mission competing against each other to become the Lord of each of the known 6.9 realms of Hell.</p>
+                    <p>The nuclear radiation was so powerful it turned the robots into SKÜLLBÖTS with the original 169 being marked forever. </p>
+                    <p>
+                    These original surviving 169 SKÜLLBÖTS were given the name Hellspawn, labeled with the Mark of the Beast on their forehead, and sent to a distant realm of hell previously unknown. Now the 169 remaining SKÜLLBÖTS are on a mission competing against each other to become the Lord of each of the known 6.9 realms of Hell.</p>
                     <p>Compete to become the master of your realm. Upgrade from a lowly BÖT, to a mid-tier BÄRÖN, then a noble DÜKE, and finally the LÖRD of your realm.</p>
                 </div>
             </div>
@@ -97,6 +87,7 @@ export default function index() {
                 <img src="/Vector.png" alt=""/>
             </div>
         </div>
+
         <div className={styles.outsideWrapper}>
             <div className={styles.innerWrapper}></div>
             <div className={styles.bottom}>
@@ -227,7 +218,7 @@ export default function index() {
                     <div className={styles.more}>
                         <div className={styles.innerMore}>
                             <h1>CHECK OUT OUR FULL NFT COLLECTIONS HERE</h1>
-                            <img src="/arrow.png" className={styles.arrow}/>
+                            <img src="/Arrow.gif" className={styles.arrow}/>
                         </div>
                         <div className={styles.cards}>
                             <img src="/card1.png" className={styles.cardThree} />
