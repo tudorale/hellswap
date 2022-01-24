@@ -286,6 +286,11 @@
     font-family: "FreeHand";
 }
 
+.title span {
+    font-family: "WalletBold";
+    font-size: 3rem !important;
+}
+
 .nfts {
     display: flex;
     flex-wrap: wrap;
@@ -394,7 +399,7 @@
     -webkit-text-stroke-color: #a80000;
 }
 
-.wrapper svg {
+.wrapper img {
     width: 210px;
     margin-top: 20px;
 }
@@ -416,6 +421,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 123;
 }
 
 .team div p {

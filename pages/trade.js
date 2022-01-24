@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar/Navbar";
 import {useState} from "react";
 export default function Trade() {
 
-  const [yourOfferSrc, setYourOfferSrc] = useState("/nfts/2.png")
-  const [reciversSrc, setReciversSrc] = useState("/nfts/1.png")
+  const [yourOfferSrc, setYourOfferSrc] = useState("/nfts/Wrath.png")
+  const [reciversSrc, setReciversSrc] = useState("/nfts/Pride.png")
 
   const applyOffer = (img) => {
     setYourOfferSrc(img.target.src)
