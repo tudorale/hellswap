@@ -23,8 +23,6 @@ export default function Index() {
         
           }, []);
 
-        
-
     const handleCards = () => {        
         if(width >= 550){
             let card1 = document.querySelector(".cardOne");
@@ -252,8 +250,10 @@ export default function Index() {
                             <img src="/Arrow.gif" className={styles.arrow}/>
                         </div>
                         <div className={styles.cards} onMouseLeave={() => handleExit()} >
-                            <img src="/card1.png" className={styles.cardThree + " " + "cardOne"} onMouseEnter={() => handleCards()}/>
-                            <img src="/card2.png" className={styles.cardFour + " " + "cardTwo"} onMouseEnter={() => handleCards()}/>
+                            <a href="https://discord.gg/45zkBzF75g" target="_blank" rel="noreferrer">
+                                <img src="/card1.png" className={styles.cardThree + " " + "cardOne"} onMouseEnter={() => handleCards()}/>
+                                <img src="/card2.png" className={styles.cardFour + " " + "cardTwo"} onMouseEnter={() => handleCards()}/>
+                            </a>
                         </div>
                     </div>
                 </div>
