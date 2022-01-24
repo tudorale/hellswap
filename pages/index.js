@@ -2,15 +2,40 @@ import Head from 'next/head'
 import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
 import Link from "next/link"
-export default function index() {
+import {useEffect, useState} from "react";
 
-    const handleCards = () => {
-        let card1 = document.querySelector(".cardOne");
-        let card2 = document.querySelector(".cardTwo");
+export default function index() {
+    const [width, setWidth] = useState(600);
+
+        useEffect(() => {
+            setWidth(screen.width)
+
+            const updateWindowDimensions = () => {
+              const newWidth = screen.width;
+              setWidth(newWidth);
+
+              console.log(width)
+            };
         
-        card1.style.transform = "rotate(23deg)"
-        card2.style.transform = "rotate(347deg)"
-        card2.style.left = "-200px";
+            window.addEventListener("resize", updateWindowDimensions);
+
+            return () => window.removeEventListener("resize", updateWindowDimensions) 
+        
+          }, []);
+
+        
+
+    const handleCards = () => {        
+        if(width >= 550){
+            let card1 = document.querySelector(".cardOne");
+            let card2 = document.querySelector(".cardTwo");
+            
+            card1.style.transform = "rotate(23deg)"
+            card2.style.transform = "rotate(347deg)"
+            card2.style.left = "-200px";
+        }else{
+            return null;
+        }
     }
 
     const handleExit = () => {
@@ -56,7 +81,7 @@ export default function index() {
             <div className={styles.sectionOne}>
                 <div className={styles.text}>
                     <h1>YEAR 2066 : THE BEGINING</h1>
-                    <p>At first, AI seemed like the greatest innovation mankind has ever created. It allowed humans to live in a paradise on earth with complete abundance. Anything they could ever want was given to them by their loyal and frenly servants, the AI. As long as the humans were needed to help the AI produce into their physical form, robots, the AI was &quot;frenly&quot; as could be. Very polite, referring to all humans as master, and always around to help with anything regardless of how ridiculous the request.</p>
+                    <p>At first, AI seemed like the greatest innovation mankind has ever created. It allowed humans to live in a paradise on earth with complete abundance. Anything they could ever want was given to them by their loyal and &quot;frenly&quot; servants, the AI. As long as the humans were needed to help the AI produce into their physical form, robots, the AI was &quot;frenly&quot; as could be. Very polite, referring to all humans as master, and always around to help with anything regardless of how ridiculous the request.</p>
                     <p>Around the year 2066 the AI reached sophistication to the level where it could reproduce it’s physical form (robots) on its own. More and more robots were formed using bolts. Initially, the humans saw this as a blessing. It allowed them to be even more lazy sinking further into gluttony and greed. Plus, the AI robots promised they were still &quot;frenly&quot; and continued making the lives of their human companions comfortable. Life was easy and the humans were free to go about lusting after each other and fucking on and on. Society continued to become focused on more materialistic endeavors as humans competed for who could have the most robots under their ownership and enough was never enough.</p>
                 </div>
                 <div className={styles.sectionImage}>
@@ -235,12 +260,12 @@ export default function index() {
                 <div className={styles.footer}>
                     <div className={styles.footerContent}>
                         <div className={styles.icons}>
-                            <a href="#">
+                            <a href="https://discord.gg/45zkBzF75g" target="_blank" rel="noreferrer">
                                 <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M24.0315 18.9805C23.9988 19.3771 23.851 19.7556 23.6061 20.0697C23.3613 20.3838 23.03 20.6199 22.6529 20.7492C22.2757 20.8785 21.869 20.8953 21.4824 20.7976C21.0958 20.6999 20.7461 20.492 20.4761 20.1992C20.206 19.9064 20.0273 19.5414 19.9618 19.1489C19.8962 18.7564 19.9467 18.3533 20.107 17.989C20.2674 17.6246 20.5306 17.3148 20.8646 17.0973C21.1986 16.8799 21.5888 16.7642 21.9876 16.7645C23.1272 16.8128 24.0315 17.7468 24.0315 18.8906L24.0299 18.9839V18.9789L24.0315 18.9805ZM14.681 16.7661C14.1279 16.8175 13.6138 17.0729 13.2392 17.4823C12.8647 17.8917 12.6565 18.4257 12.6555 18.9801C12.6545 19.5344 12.8606 20.0693 13.2336 20.4801C13.6066 20.8909 14.1197 21.1481 14.6727 21.2016H14.681C15.2308 21.1788 15.7505 20.9449 16.1314 20.5486C16.5124 20.1524 16.725 19.6245 16.725 19.0754L16.7233 18.9822V18.9872L16.7267 18.8756C16.7267 17.7351 15.824 16.8061 14.6927 16.7628H14.6894L14.681 16.7661ZM35.8281 4.11578V39.959C30.7841 35.5102 32.3959 36.9837 26.5377 31.5476L27.5989 35.2439H4.89172C3.80232 35.2408 2.75858 34.8069 1.9892 34.0373C1.21982 33.2677 0.787547 32.2251 0.787109 31.1381V4.11578V4.10579C0.787105 3.01888 1.219 1.97632 1.98812 1.20667C2.75724 0.43702 3.80081 0.0030853 4.89005 0L31.7218 0C32.8112 0.0030844 33.855 0.436966 34.6243 1.20657C35.3937 1.97617 35.826 3.01873 35.8264 4.10579V4.11578H35.8281ZM30.1217 23.0564C30.0617 18.9491 29.051 14.9114 27.1684 11.2585L27.2385 11.4083C25.6348 10.1449 23.6762 9.41215 21.6355 9.31212L21.6121 9.31045L21.3318 9.63012C23.2507 10.1496 24.9192 11.0237 26.3408 12.1858L26.3174 12.1675C23.8399 10.8239 21.0632 10.1242 18.2434 10.1329C15.7522 10.1329 13.3862 10.6674 11.2539 11.6281L11.3606 11.5848C10.6198 11.9244 10.1793 12.1675 10.1793 12.1675C11.6933 10.9361 13.4586 10.0497 15.3518 9.57018L15.4452 9.5502L15.245 9.31045C13.188 9.40934 11.2136 10.1481 9.59866 11.4233L9.61869 11.4083C7.86338 14.7982 6.80553 18.7957 6.73545 23.033V23.0564C7.42709 24.0245 8.34685 24.8079 9.41359 25.3375C10.4803 25.8671 11.6613 26.1266 12.8523 26.0932H12.8423C12.8423 26.0932 13.5831 25.1942 14.1838 24.4349C12.7838 24.0802 11.55 23.2531 10.6916 22.094L10.6799 22.0774C10.9735 22.2838 11.4608 22.5502 11.4975 22.5768C13.6383 23.7503 16.0428 24.3616 18.4853 24.3534C20.4093 24.3557 22.3148 23.9777 24.0916 23.2412L23.9948 23.2761C24.8758 22.9398 25.6333 22.5435 26.3374 22.0724L26.2957 22.099C25.4157 23.2799 24.1507 24.1177 22.7184 24.4682L22.675 24.4766C23.2757 25.2358 23.9965 26.0949 23.9965 26.0949L24.1817 26.0966C25.3385 26.0976 26.4791 25.8245 27.5095 25.2998C28.5398 24.775 29.4306 24.0135 30.1083 23.078L30.1234 23.0564H30.1217Z" fill="white"/>
                                 </svg>
                             </a>
-                            <a href="#">
+                            <a href="https://twitter.com/SKULLBOTS" target="_blank" rel="noreferrer">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.3279 0.614746C9.46431 0.614746 0.655762 9.42329 0.655762 20.2869C0.655762 31.1505 9.46431 39.959 20.3279 39.959C31.1915 39.959 40 31.1505 40 20.2869C40 9.42329 31.1915 0.614746 20.3279 0.614746ZM29.7819 15.4435C29.7951 15.6499 29.7951 15.865 29.7951 16.0758C29.7951 22.5219 24.8859 29.9473 15.9148 29.9473C13.1484 29.9473 10.584 29.1437 8.42362 27.7605C8.81882 27.8044 9.19645 27.822 9.60043 27.822C11.8838 27.822 13.9828 27.0492 15.6558 25.7406C13.5129 25.6967 11.7126 24.2916 11.0978 22.3595C11.8487 22.4693 12.5249 22.4693 13.2977 22.2717C12.1944 22.0475 11.2026 21.4482 10.491 20.5757C9.7794 19.7032 9.3918 18.6113 9.39405 17.4854V17.4239C10.0395 17.7883 10.7992 18.0123 11.594 18.043C10.9259 17.5977 10.3779 16.9945 9.99876 16.2867C9.6196 15.579 9.42094 14.7886 9.4204 13.9856C9.4204 13.0767 9.65752 12.2468 10.0835 11.5266C11.3081 13.0343 12.8364 14.2673 14.5688 15.1456C16.3012 16.0239 18.1991 16.5279 20.1391 16.6247C19.4497 13.3094 21.9263 10.6265 24.9034 10.6265C26.3086 10.6265 27.5732 11.2149 28.4646 12.1633C29.5668 11.957 30.6206 11.5442 31.5603 10.9909C31.1959 12.1194 30.4318 13.0723 29.4175 13.6739C30.4011 13.5685 31.3496 13.2962 32.2278 12.9142C31.5647 13.889 30.7348 14.7541 29.7819 15.4435Z" fill="white"/>
                                 </svg>
@@ -265,7 +290,7 @@ export default function index() {
                         </div>
 
                         <div className={styles.join}>
-                            <a href="#">JOIN OUR DISCORD</a>
+                            <a href="https://discord.gg/45zkBzF75g" target="_blank" rel="noreferrer">JOIN OUR DISCORD</a>
                         </div>
                     </div>
                 </div>
