@@ -495,13 +495,14 @@
 .cards {
     display: flex;
     position: relative;
-    margin-top: 50px;
+    margin-top: 30px;
     z-index: 102;
 }
 
 .cards img {
     position: relative;
     width: 300px;
+    transition: all 200ms linear;
 }
 
 .cardFour {

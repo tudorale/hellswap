@@ -4,6 +4,24 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link"
 export default function index() {
 
+    const handleCards = () => {
+        let card1 = document.querySelector(".cardOne");
+        let card2 = document.querySelector(".cardTwo");
+        
+        card1.style.transform = "rotate(23deg)"
+        card2.style.transform = "rotate(347deg)"
+        card2.style.left = "-200px";
+    }
+
+    const handleExit = () => {
+        let card1 = document.querySelector(".cardOne");
+        let card2 = document.querySelector(".cardTwo");
+        
+        card2.style.transform = "rotate(0deg)"
+        card1.style.transform = "rotate(-7deg)"
+        card2.style.left = "0px";
+    }
+    
   return (
       <div className={styles.home}>
         <Head>
@@ -46,6 +64,7 @@ export default function index() {
                 </div>
             </div>
         </div>
+
         <div className={styles.middle2}>
             <div className={styles.sectionThree}>
                 <div className={styles.text}>
@@ -207,9 +226,9 @@ export default function index() {
                             <h1>JOIN T<span>H</span>E SKULLBOT BIKER GANG</h1>
                             <img src="/Arrow.gif" className={styles.arrow}/>
                         </div>
-                        <div className={styles.cards}>
-                            <img src="/card1.png" className={styles.cardThree} />
-                            <img src="/card2.png" className={styles.cardFour}/>
+                        <div className={styles.cards} onMouseLeave={() => handleExit()} >
+                            <img src="/card1.png" className={styles.cardThree + " " + "cardOne"} onMouseEnter={() => handleCards()}/>
+                            <img src="/card2.png" className={styles.cardFour + " " + "cardTwo"} onMouseEnter={() => handleCards()}/>
                         </div>
                     </div>
                 </div>
@@ -249,7 +268,7 @@ export default function index() {
                             <a href="#">JOIN OUR DISCORD</a>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
       </div>
