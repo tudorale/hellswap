@@ -49,8 +49,8 @@ export default function Index() {
       <div className={styles.home}>
         <Head>
             <title>HellSwap / TRADE NFTS</title>
-            <meta name="description" content="Trade NFTs with your blood" />
-            <link rel="icon" href="/favicon.ico" />
+            <meta name="description" content="Trade NFTs with a drop of your blood" />
+            <link rel="icon" href="/icon.png" />
         </Head>
 
         <div className={styles.top}>
@@ -249,12 +249,12 @@ export default function Index() {
                             <h1>JOIN T<span>H</span>E SKULLBOT BIKER GANG</h1>
                             <img src="/Arrow.gif" className={styles.arrow}/>
                         </div>
-                        <div className={styles.cards} onMouseLeave={() => handleExit()} >
-                            <a href="https://discord.gg/45zkBzF75g" target="_blank" rel="noreferrer">
-                                <img src="/card1.png" className={styles.cardThree + " " + "cardOne"} onMouseEnter={() => handleCards()}/>
-                                <img src="/card2.png" className={styles.cardFour + " " + "cardTwo"} onMouseEnter={() => handleCards()}/>
-                            </a>
-                        </div>
+                        <a href="https://discord.gg/45zkBzF75g" target="_blank" rel="noreferrer">
+                            <div className={styles.cards} onMouseLeave={() => handleExit()} >
+                                    <img src="/card1.png" className={styles.cardThree + " " + "cardOne"} onMouseEnter={() => handleCards()}/>
+                                    <img src="/card2.png" className={styles.cardFour + " " + "cardTwo"} onMouseEnter={() => handleCards()}/>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.footer}>
