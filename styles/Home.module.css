@@ -275,7 +275,7 @@
     position: absolute;
     bottom: -170px;
     width: 100%;
-    z-index: 90;
+    z-index: 2;
 }
 
 .title {
@@ -395,7 +395,7 @@
 }
 
 .wrapper svg {
-    width: 180px;
+    width: 210px;
     margin-top: 20px;
 }
 
@@ -413,6 +413,17 @@
 .team div {
     margin: 0 7px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team div p {
+    color: black;
+    font-family: "FreeHand";
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .team div img {
@@ -491,6 +502,8 @@
     background: black;
     padding: 0 70px;
     margin-top: -40px;
+    display: flex;
+    align-items: center;
 }
 
 .footerContent {
@@ -498,6 +511,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     position: relative;
     z-index: 102;
 }
