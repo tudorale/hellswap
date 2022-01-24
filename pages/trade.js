@@ -18,12 +18,6 @@ export default function Trade() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>HellSwap / TRADE NFTS</title>
-        <meta name="description" content="Trade NFTs with your blood" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      
       <Navbar />
       
       <div className={styles.grid}>
