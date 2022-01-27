@@ -1,8 +1,8 @@
 # Skullbots.io
 
-Website from a Figma Design for a client.
+Website for a client from Figma Design to real NFT Project.
 
 ### Technologies
 - Next JS
 
-URL: https://www.skullbots.io/
+Url: https://www.skullbots.io/
